@@ -11,7 +11,8 @@ namespace Pokemon
         public string Name { get; set; }
         public int level{ get; set; }
 
-        public string type{ get; set; }
+        public Types type1{ get; set; }
+        public Types type2{ get; set; }
 
         public int HPIV{ get; set; }
         public int AttackIV{ get; set; }
@@ -33,6 +34,8 @@ namespace Pokemon
         public int SpAtk{ get; set; }
         public int SpDef{ get; set; }
         public int Speed{ get; set; }
+
+        public string Status{get; set;}
 
        
 

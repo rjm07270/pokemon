@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Pokemon
-{//fdsaljkdf;sal;ksdaf;jl
+{
     class BattleNum
     {
         private static Random RNG = new Random();
