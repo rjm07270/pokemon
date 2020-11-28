@@ -12,6 +12,7 @@ namespace Pokemon
 
         public Flamethrower()
         {
+            this.Name = "Flamethrower";
             this.type1 = Types.Fire;
             this.Kind = "Special";
             this.Accuracy = 100;

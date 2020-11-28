@@ -32,50 +32,63 @@ namespace Pokemon
         }
         public static int BattleDamage(Pokemon atk, Pokemon def, Moves move, Weather outside)
         {
-            Random RNG = new Random();
+
             int damage = 0;
-            double random = (RNG.Next(85, 100) / 100);
-            int Accuracy = RNG.Next(0, 100);
-            double modifier;
-            double forcast = Forcast(outside, move);
-            double critical = Critical();
-            double sTAB = STAB(atk, move);
-            double typeEffect = TypeEffect(def, move);
-            double burned = Burned(atk, move);
-            double Other = move.other;
-
-
-            modifier = forcast * critical * sTAB * typeEffect * burned * Other;
-
-
-            // modifier = Forcast(outside, move) * Critical() * random * STAB(atk, move) * TypeEffect(atk, def, move) * Burned(atk, move) * Other;
-            Console.WriteLine("forcast=" + forcast);
-            Console.WriteLine("critical=" + critical);
-            Console.WriteLine("sTAB=" + sTAB);
-            Console.WriteLine("typeEffect=" + typeEffect);
-            Console.WriteLine("burned=" + burned);
-            Console.WriteLine("Other=" + Other);
-            Console.WriteLine("modifier=" + modifier);
-
-            if (move.Accuracy >= Accuracy)
+            if (move.pp > 0)
             {
-                if (move.Kind == "Special")
+
+                Random RNG = new Random();
+                
+                double random = (RNG.Next(85, 100) / 100);
+                int Accuracy = RNG.Next(0, 100);
+                double modifier;
+                double forcast = Forcast(outside, move);
+                double critical = Critical();
+                double sTAB = STAB(atk, move);
+                double typeEffect = TypeEffect(def, move);
+                double burned = Burned(atk, move);
+                double Other = move.other;
+
+
+                modifier = forcast * critical * sTAB * typeEffect * burned * Other;
+
+
+                // modifier = Forcast(outside, move) * Critical() * random * STAB(atk, move) * TypeEffect(atk, def, move) * Burned(atk, move) * Other;
+                /*Console.WriteLine("forcast=" + forcast);
+                Console.WriteLine("critical=" + critical);
+                Console.WriteLine("sTAB=" + sTAB);
+                Console.WriteLine("typeEffect=" + typeEffect);
+                Console.WriteLine("burned=" + burned);
+                Console.WriteLine("Other=" + Other);
+                Console.WriteLine("modifier=" + modifier);*/
+
+                if (move.Accuracy >= Accuracy)
                 {
-                    damage = Convert.ToInt32((((2 * atk.level / 5) + 2) * move.BaseDamage * atk.SpAtk / def.SpDef / 50 + 2) * modifier);
+                    if (move.Kind == "Special")
+                    {
+                        damage = Convert.ToInt32((((2 * atk.level / 5) + 2) * move.BaseDamage * atk.SpAtk / def.SpDef / 50 + 2) * modifier);
+                    }
+                    else
+                    {
+                        damage = Convert.ToInt32((((2 * atk.level / 5) + 2) * move.BaseDamage * atk.Attack / def.Defence / 50 + 2) * modifier);
+                    }
                 }
                 else
                 {
-                    damage = Convert.ToInt32((((2 * atk.level / 5) + 2) * move.BaseDamage * atk.Attack / def.Defence / 50 + 2) * modifier);
+                    Console.WriteLine(atk.Name + "Missed");
                 }
+
+                move.pp -= 1;
+
+                return damage;
+
             }
             else
             {
-                Console.WriteLine(atk.Name + "Missed");
+                Console.WriteLine("Out of PP for " + move.Name);
+                return 0;
+                
             }
-
-            return damage;
-
-
         }
 
         public static double Forcast(Weather outside, Moves move)

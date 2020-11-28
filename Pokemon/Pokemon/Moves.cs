@@ -6,6 +6,8 @@ namespace Pokemon
 {
     abstract class Moves
     {
+
+        public string Name { get; set; }
         public Types type1 { get; set; }
 
         public string Kind { get; set; }

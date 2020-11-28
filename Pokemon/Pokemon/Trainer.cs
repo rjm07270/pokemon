@@ -4,12 +4,12 @@ using System.Runtime.CompilerServices;
 using System.Text;
 
 
-    class Trainer : Pokemon
+    class Trainer 
     {
         /* Fields */
 
 
-        //fuck you ryan
+        
 
         private int[] attributes;
         public int X { get; set; }
