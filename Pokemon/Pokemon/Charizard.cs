@@ -15,7 +15,8 @@ namespace Pokemon
             this.Name = "Charizard";
 
             this.type1 = Types.Fire;
-            this.type2 = Types.Fly;
+            this.type2 = Types.Flying;
+
 
             this.HPIV = RNG.Next(32);
             this.AttackIV = RNG.Next(32);
@@ -41,6 +42,10 @@ namespace Pokemon
             this.Speed = 100;
 
             this.level = 50;
+
+
+
+
 
 
         }

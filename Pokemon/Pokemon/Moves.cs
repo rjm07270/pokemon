@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Pokemon
 {
-    abstract  class Moves
+    abstract class Moves
     {
-        public string Type { get; set; }
+        public Types type1 { get; set; }
 
         public string Kind { get; set; }
         public int Accuracy { get; set; }
@@ -15,7 +15,6 @@ namespace Pokemon
 
         public int pp { get; set; }
 
-        
-
+        public double other { get; set; }
     }
 }
