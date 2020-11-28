@@ -10,7 +10,7 @@ namespace Pokemon
 
             Charizard Charizard = new Charizard();
             Blastoise Blastoise = new Blastoise();
-            Flamethrower Flamethrower = new Flamethrower();
+            Flamethrower x = new Flamethrower();
             HydroPump HydroPump = new HydroPump();
 
             int Damage;
@@ -20,7 +20,7 @@ namespace Pokemon
             Console.WriteLine(Blastoise.HP);
             Console.WriteLine(Charizard.HP);
 
-
+            //Console.WriteLine(Charizard.MoveDump(Charizard.BattleMoves[0])) ;
             Damage = BattleDamage(Charizard, Blastoise, Charizard.BattleMoves[0], outside);
             Blastoise.HP -= Damage;
             Console.WriteLine(Damage);

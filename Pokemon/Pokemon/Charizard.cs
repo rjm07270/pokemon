@@ -43,13 +43,30 @@ namespace Pokemon
 
             this.level = 50;
 
-            Flamethrower Flamethrower = new Flamethrower();
-            this.BattleMoves[0] = Flamethrower;
-           
 
+            
+       
+            this.BattleMoves = new Moves[4];
+
+            this.BattleMoves[0]= new Flamethrower();
+            this.BattleMoves[1] = new DragonClaw();
+            this.BattleMoves[2] = new WingedAttack();
+            this.BattleMoves[3] = new FlareBlitz();
+
+
+            
 
 
         }
-        
+
+        public void MoveDump(Moves[] BattleMoves)
+        {
+            for(int i =0; i< BattleMoves.Length; i++)
+            {
+                Console.WriteLine(BattleMoves[i].Name);
+            }
+            
+        }
+
     }
 }
