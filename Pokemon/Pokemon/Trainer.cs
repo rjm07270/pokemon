@@ -4,14 +4,14 @@ using System.Runtime.CompilerServices;
 using System.Text;
 
 
-    class Trainer 
+    /*class Trainer 
     {
-        /* Fields */
+        Fields */
 
 
         
 
-        private int[] attributes;
+       /* private int[] attributes;
         public int X { get; set; }
         public int Y { get; set; }
         public int speed { get; set; }
@@ -24,7 +24,7 @@ using System.Text;
         public Pokemon[] party { get; set; }
 
     /* methods */
-    public void MoveNorth()
+    /*public void MoveNorth()
     {
         this.Y = this.Y - this.speed;
     }
@@ -150,3 +150,4 @@ using System.Text;
     }
 }
 
+*/
