@@ -4,25 +4,25 @@ using System.Runtime.CompilerServices;
 using System.Text;
 
 
-    class Trainer : Pokemon
-    {
-        /* Fields */
+class Trainer
+{
+    /* Fields */
 
 
-        //fuck you ryan
+    //fuck you ryan
 
-        private int[] attributes;
-        public int X { get; set; }
-        public int Y { get; set; }
-        public int speed { get; set; }
-        public int Facing { get; set; }
+    private int[] attributes;
+    public int X { get; set; }
+    public int Y { get; set; }
+    public int speed { get; set; }
+    public int Facing { get; set; }
 
-        public int Initiative { get; set; }
-        public Item[] inventory { get; set; }
-        public string[] rivels { get; set; }
-        public Pokemon[] PC { get; set; }
-        public Pokemon[] party { get; set; }
-    
+    public int Initiative { get; set; }
+    public Items[] inventory { get; set; }
+    public string[] rivels { get; set; }
+    public Pokemon[] PC { get; set; }
+    public Pokemon[] party { get; set; }
+
     /* methods */
     public void MoveNorth()
     {
@@ -135,16 +135,16 @@ using System.Text;
         return output;
 
     }
-    public void swapHands() //Swap Hands
+    public void SwapHands() //Swap Hands
     {
         Console.WriteLine(showPC());
         Console.WriteLine("Pick what pokemon you would like to put in your party");
-        int PCslot = Int32.Parse(Console.Read());
+        int PCslot = Int32.Parse(Console.ReadLine());
         Console.WriteLine(showparty());
         Console.WriteLine("Pick what slot you would like your pokemon to go");
-        int partySlot = Int32.Parse(Console.Read());
+        int partySlot = Int32.Parse(Console.ReadLine());
 
-        Pokemon temp= this.PC[PCslot];
+        Pokemon temp = this.PC[PCslot];
         this.PC[PCslot] = this.party[partySlot];
         this.party[partySlot] = temp;
     }
