@@ -8,6 +8,9 @@ using System.Text;
     {
         /* Fields */
 
+
+        //fuck you ryan
+
         private int[] attributes;
         public int X { get; set; }
         public int Y { get; set; }
