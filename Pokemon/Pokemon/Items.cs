@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-
+/*
 abstract class Items 
 {
-    /* Fields */
+    /* Fields 
 
 
     public string Name { get; set; }
@@ -43,4 +43,4 @@ abstract class Items
         return name;
     }
 
-}
+}*/

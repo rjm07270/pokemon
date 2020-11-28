@@ -15,13 +15,13 @@ namespace Pokemon
 
             int Damage;
 
-
+            //Console.WriteLine(Charizard.BattleMoves[0].Name);
 
             Console.WriteLine(Blastoise.HP);
             Console.WriteLine(Charizard.HP);
 
 
-            Damage = BattleDamage(Charizard, Blastoise, Flamethrower, outside);
+            Damage = BattleDamage(Charizard, Blastoise, Charizard.BattleMoves[0], outside);
             Blastoise.HP -= Damage;
             Console.WriteLine(Damage);
             Console.WriteLine(Blastoise.HP);

@@ -38,6 +38,8 @@ namespace Pokemon
 
         public string Status { get; set; }
 
+        public Moves [] BattleMoves { get; set; }
+
 
 
     }

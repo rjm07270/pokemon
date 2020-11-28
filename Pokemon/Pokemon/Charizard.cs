@@ -43,12 +43,13 @@ namespace Pokemon
 
             this.level = 50;
 
-
-
+            Flamethrower Flamethrower = new Flamethrower();
+            this.BattleMoves[0] = Flamethrower;
+           
 
 
 
         }
-
+        
     }
 }
