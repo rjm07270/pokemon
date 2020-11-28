@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pokemon
 {
-    abstract class Pokemon
+    abstract class Pokemon : Items
     {
         /* Fields */
 

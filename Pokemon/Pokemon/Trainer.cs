@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 
 
-    class Trainer : Pokemon, Item
+    class Trainer : Pokemon
     {
         /* Fields */
 
@@ -17,8 +17,8 @@ using System.Text;
         public int Initiative { get; set; }
         public Item[] inventory { get; set; }
         public string[] rivels { get; set; }
-        public Pokmon[] PC { get; set; }
-        public Pokmon[] party { get; set; }
+        public Pokemon[] PC { get; set; }
+        public Pokemon[] party { get; set; }
 
     /* methods */
     public void MoveNorth()
