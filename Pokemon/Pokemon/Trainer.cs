@@ -4,12 +4,12 @@ using System.Runtime.CompilerServices;
 using System.Text;
 
 
-    class Trainer 
+    class Trainer : Pokemon
     {
         /* Fields */
 
 
-        
+        //fuck you ryan
 
         private int[] attributes;
         public int X { get; set; }
@@ -22,7 +22,7 @@ using System.Text;
         public string[] rivels { get; set; }
         public Pokemon[] PC { get; set; }
         public Pokemon[] party { get; set; }
-
+    
     /* methods */
     public void MoveNorth()
     {
