@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pokemon
-{
+
     abstract class Pokemon
     {
         /* Fields */
@@ -43,4 +42,4 @@ namespace Pokemon
 
 
     }
-}
+
