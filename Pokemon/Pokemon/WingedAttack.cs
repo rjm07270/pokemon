@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pokemon
-{
+
+
     class WingedAttack : Moves
     {
 
@@ -18,5 +18,10 @@ namespace Pokemon
             this.other = 1;
             //burn=10;
         }
+
+public override void status(Pokemon atk, Pokemon def, int damage)
+    {
+        
     }
 }
+

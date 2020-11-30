@@ -30,16 +30,42 @@ using System.Text;
 
         public int HP { get; set; }
         public int Attack { get; set; }
+
         public int Defence { get; set; }
         public int SpAtk { get; set; }
         public int SpDef { get; set; }
         public int Speed { get; set; }
 
-        public string Status { get; set; }
+    public int BattleAttack { get; set; }
+    public int BattleDefence { get; set; }
+    public int BattleSpAtk { get; set; }
+    public int BattleSpDef { get; set; }
+    public int BattleSpeed { get; set; }
+    public int BattleAccuracy { get; set; }
 
-        public Moves [] BattleMoves { get; set; }
+    public int BattleEvasion { get; set; }
 
 
+    public string Status { get; set; }
 
+        public Moves[] BattleMoves { get; set; }
+
+
+        public void MoveDump(Pokemon Pokemon)
+    {
+        for (int i = 0; i < Pokemon.BattleMoves.Length; i++)
+        {
+            Console.WriteLine((i+1) + ": " + Pokemon.BattleMoves[i].Name);
+        }
     }
+
+
+
+
+
+}
+
+
+
+
 

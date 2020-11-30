@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pokemon
-{
+
+
     enum Types
     {
         None = 0,
@@ -27,4 +27,3 @@ namespace Pokemon
         Fairy = 18
 
     }
-}

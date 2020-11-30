@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Pokemon
-{
+
+
     class Charizard : Pokemon
     {
         //IV and EV genorater
@@ -43,9 +43,19 @@ namespace Pokemon
 
             this.level = 50;
 
+        this.BattleAttack = 0;
+        this.BattleDefence = 0;
+        this.BattleSpAtk = 0;
+        this.BattleSpDef = 0;
+        this.BattleSpeed = 0;
+        this.BattleAccuracy = 0;
+        this.BattleEvasion = 0;
+        this.Status = "";
 
-            
-       
+
+
+
+
             this.BattleMoves = new Moves[4];
 
             this.BattleMoves[0]= new Flamethrower();
@@ -59,14 +69,6 @@ namespace Pokemon
 
         }
 
-        public void MoveDump(Moves[] BattleMoves)
-        {
-            for(int i =0; i< BattleMoves.Length; i++)
-            {
-                Console.WriteLine(BattleMoves[i].Name);
-            }
-            
-        }
+        
 
     }
-}

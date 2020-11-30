@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pokemon
-{
+
+
 
     class HydroPump : Moves
     {
@@ -12,6 +12,7 @@ namespace Pokemon
 
         public HydroPump()
         {
+            this.Name = "Hydro Pump";
             this.type1 = Types.Water;
             this.Kind = "Special";
             this.Accuracy = 80;
@@ -20,5 +21,10 @@ namespace Pokemon
             this.other = 1;
             //burn=10;
         }
+
+public override void status(Pokemon atk, Pokemon def, int damage)
+    {
+        
     }
 }
+

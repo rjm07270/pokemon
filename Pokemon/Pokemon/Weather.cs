@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pokemon
-{
+
+
     enum Weather
     {
         Noraml = 0,
@@ -13,4 +13,4 @@ namespace Pokemon
         Hailstorm = 4,
         Fog = 5
     }
-}
+

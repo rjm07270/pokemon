@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-/*
+
 abstract class Items 
 {
-    /* Fields 
+    /* Fields */
 
 
     public string Name { get; set; }
@@ -25,14 +25,14 @@ abstract class Items
         }
     }
 
-    public Item(string n, int initc)
+    public Items(string n, int initc)
     {
         this.Name = n;
         this.stack = initc;
     }
 
     public string name { get; set; }
-    public Item(string n)
+    public Items(string n)
     {
         name = n;
     }
@@ -43,4 +43,4 @@ abstract class Items
         return name;
     }
 
-}*/
+}

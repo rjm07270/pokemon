@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj": {}
+    "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj": {
+    "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj",
         "projectName": "Pokemon",
-        "projectPath": "C:\\Users\\Daniel\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj",
+        "projectPath": "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj",
         "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\obj\\",
+        "outputPath": "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
