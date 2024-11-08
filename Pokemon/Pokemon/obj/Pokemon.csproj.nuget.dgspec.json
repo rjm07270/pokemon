@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj": {}
+    "C:\\Users\\Ryan\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj": {
+    "C:\\Users\\Ryan\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj",
+        "projectUniqueName": "C:\\Users\\Ryan\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj",
         "projectName": "Pokemon",
-        "projectPath": "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj",
-        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel\\source\\repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\obj\\",
+        "projectPath": "C:\\Users\\Ryan\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\Pokemon.csproj",
+        "packagesPath": "C:\\Users\\Ryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ryan\\Source\\Repos\\rjm07270\\pokemon\\Pokemon\\Pokemon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -26,10 +28,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +45,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -56,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }
